@@ -21,6 +21,9 @@ at anytime.
   * Initialize lbrynet settings when configuring an api client if they are not set yet
   * Updated lbryum imports
   * Improve error message when resolving a claim fails using the "get" command
+  * Linux default downloads folder changed from `~/Downloads` to `XDG_DOWNLOAD_DIR`
+  * Linux folders moved from the home directory to `~/.local/share/lbry`
+  * Windows folders moved from `%AppData%/Roaming` to `%AppData%/Local/lbry
 
 ### Fixed
   * Fixed some log messages throwing exceptions
@@ -30,6 +33,7 @@ at anytime.
   * Increased max_key_fee
   * Fixed unit tests on appveyor Windows build
   * Fixed [#692](https://github.com/lbryio/lbry/issues/692) 
+  * Fix XDG compliance on Linux
 
 ### Deprecated
   *
